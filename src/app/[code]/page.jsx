@@ -25,7 +25,7 @@ const Wrapper = ({ params }) => {
         }
     }, [resolvedParams.code, router]);
 
-    if (resolvedParams.code !== 'code') return null;
+    if (resolvedParams.code !== 'pelon') return null;
 
     return <CodePage />;
 };

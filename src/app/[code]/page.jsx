@@ -20,7 +20,7 @@ const Wrapper = ({ params }) => {
     const router = useRouter();
     const resolvedParams = use(params); 
     useEffect(() => {
-        if (resolvedParams.code !== 'code') {
+        if (resolvedParams.code !== 'pelon') {
             router.push('https://media.tenor.com/AM2wDAZ-TVMAAAAi/cat-pointing.gif');
         }
     }, [resolvedParams.code, router]);
